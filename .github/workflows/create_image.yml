@@ -10,9 +10,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Install QEMU
-        run: 
-
       - name: Get FAUST Image
         run: ./scripts/get_image.sh
 
