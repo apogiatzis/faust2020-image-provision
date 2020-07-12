@@ -1,0 +1,4 @@
+packer_cache
+*.qcow2
+account.json
+.DS_Store

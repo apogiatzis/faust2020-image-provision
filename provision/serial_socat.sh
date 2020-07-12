@@ -1,0 +1,1 @@
+socat unix-connect:/tmp/vulnbox.serial EXEC:./provision/provision.sh,fdin=3,fdout=4
