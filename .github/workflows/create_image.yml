@@ -32,7 +32,7 @@ jobs:
           target: packer.json
 
       - name: Build Artifact
-        run: sudo apt-get update && sudo apt-get install qemu-kvm qemu qemu-system-x86 && wget https://releases.hashicorp.com/packer/1.6.0/packer_1.6.0_linux_amd64.zip && unzip packer_1.6.0_linux_amd64.zip && sudo mv packer /usr/local/bin/ && packer build -color=false -on-error=abort -var 'gcp_project_id=${{secrets.GCP_PROJECT_ID}}' -var 'team_no=${{secrets.TEAM_NO}}' packer.json
+        run: sudo apt-get update -y && sudo apt-get install -y socat qemu-kvm qemu qemu-system-x86 && wget https://releases.hashicorp.com/packer/1.6.0/packer_1.6.0_linux_amd64.zip && unzip packer_1.6.0_linux_amd64.zip && sudo mv packer /usr/local/bin/ && packer build -color=false -on-error=abort -var 'gcp_project_id=${{secrets.GCP_PROJECT_ID}}' -var 'team_no=${{secrets.TEAM_NO}}' packer.json
 
 
       # validate templates
