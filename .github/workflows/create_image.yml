@@ -35,5 +35,5 @@ jobs:
         uses: operatehappy/packer-github-actions@master
         with:
           command: build
-          arguments: "-color=false -on-error=abort -var 'gcp_project_id=${{secrets.GCP_PROJECT_ID}}' -var 'team_no=${{team_no}}'"
+          arguments: "-color=false -on-error=abort -var 'gcp_project_id=${{secrets.GCP_PROJECT_ID}}' -var 'team_no=${{secrets.TEAM_NO}}'"
           target: packer.json
