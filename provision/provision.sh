@@ -1,3 +1,5 @@
+#!/bin/bash
+
 while read -u 3 BUFFER
 do
     echo $BUFFER
