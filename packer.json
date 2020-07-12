@@ -39,7 +39,7 @@
       {
         "type": "googlecompute-import",
         "project_id": "faustctf2020",
-        "account_file": "faustctf2020-bfe4dd51cdb4.json",
+        "account_file": "account.json",
         "bucket": "faust-image",
         "image_name": "vulnbox-{{timestamp}}",
         "image_description": "FAUST CTF 2020 - VulnBox",
