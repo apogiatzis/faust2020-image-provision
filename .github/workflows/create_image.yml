@@ -16,6 +16,9 @@ jobs:
       - name: Create GCP credentials
         run: echo ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}} | base64 -d > account.json 
 
+      - name: Install QEMU
+        run: apt-get install qemu-system-x86_64
+
       # fix backwards incompatibilities in template
       - name: Fix Template
         uses: operatehappy/packer-github-actions@master
